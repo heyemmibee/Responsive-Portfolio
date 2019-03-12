@@ -3,15 +3,13 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background: url("../images/concrete_seamless.png");
+    background: url("./assets/images/handmadepaper.png");
   }
   
   * {
     box-sizing: border-box;
   }
-  
-  /* general */
-  
+
   .container {
     width: 100%;
     max-width: 960px;
@@ -214,5 +212,68 @@ body {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+  }
+
+/* HOLY MEDIA SCREENS. */
+
+  @media screen and (max-width: 980px) {
+    .main-content {
+      width: 600px;
+    }
+    .nav-box {
+      width: 640px;
+    }
+    .image-container{
+      margin-left: 35px;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main-content {
+      width: 500px;
+    }
+    .nav-box {
+      width: 540px;
+    }
+    .image-container{
+      margin-left: 130px;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    nav {
+      width: inherit;
+    }
+    .main-content {
+      width: 350px;
+      margin: 60px auto;
+    }
+    .nav-box {
+      width: inherit;
+      margin: 0px 0px 20px 0px;
+      text-align: center;
+      padding: 5px auto;
+    }
+    .header-logo {
+      float: none;
+      width: inherit;
+    }
+    .menu {
+      float: none;
+      background-color: white;
+      height: 20px;
+      width: inherit;
+      padding: 8px 0px 8px 0px;
+    }
+    #about-image {
+      float: none;
+      width: 90%;
+      height: 90%;
+      padding: 10px auto;
+    }
+    .image-container{
+      margin-left: 50px;
+      margin-bottom: 20px;
+    }
   }
   
